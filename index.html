@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Smoothie Machine</h1>
+    <form id="smoothieForm">
+        <label for="fruit">Choose your fruit:</label>
+        <select id="fruit" name="fruit">
+            <option value="Strawberry">Strawberry</option>
+            <option value="Banana">Banana</option>
+            <option value="Mango">Mango</option>
+            <option value="Blueberry">Blueberry</option>
+        </select>
+        <br><br>
+
+        <label for="base">Choose your base:</label>
+        <select id="base" name="base">
+            <option value="Milk">Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Yogurt">Yogurt</option>
+            <option value="Water">Water</option>
+        </select>
+        <br><br>
+
+        <label for="size">Choose your size:</label>
+        <input type="radio" id="small" name="size" value="Small"> Small
+        <input type="radio" id="medium" name="size" value="Medium" checked> Medium
+        <input type="radio" id="large" name="size" value="Large"> Large
+        <br><br>
+
+        <label for="toppings">Add toppings:</label>
+        <input type="checkbox" id="chiaSeeds" name="toppings" value="Chia Seeds"> Chia Seeds
+        <input type="checkbox" id="protein" name="toppings" value="Protein Powder"> Protein Powder
+        <input type="checkbox" id="honey" name="toppings" value="Honey"> Honey
+        <br><br>
+
+        <button type="button" id="orderButton">Order Smoothie</button>
+    </form>
+
+    <div id="orderSummary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
